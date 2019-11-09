@@ -29,7 +29,12 @@ class App extends React.Component {
     return (
       <div>
         {posts.map((item, index) => (
-          <li key={index}>{item.title}</li>
+          <div key={index}>
+            <li>
+              <b>{item.title}</b>
+              <p>{item.body}</p>
+            </li>
+          </div>
         ))}
       </div>
     );

@@ -30,8 +30,8 @@ class App extends React.Component {
     const { posts } = this.state;
     return (
       <div>
-        {posts.map(item => (
-          <li>{item.title}</li>
+        {posts.map((item, index) => (
+          <li key={index}>{item.title}</li>
         ))}
       </div>
     );

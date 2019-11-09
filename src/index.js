@@ -28,17 +28,13 @@ class App extends React.Component {
 
   render() {
     const { posts } = this.state;
-    if (this.state.posts.length > 0) {
-      return (
-        <div>
-          {posts.map(item => (
-            <li>{item.title}</li>
-          ))}
-        </div>
-      );
-    }
-
-    return <div />;
+    return (
+      <div>
+        {posts.map(item => (
+          <li>{item.title}</li>
+        ))}
+      </div>
+    );
   }
 }
 
